@@ -35,4 +35,9 @@ def hangman(word):
         print("\n".join(stages[0:(wrong+1)]))
         print("You lose! It was {}.".format(word))
 
-hangman("letters")
+import random
+
+letters = ['goat', 'lamb', 'zebra', 'antilope', 'gazelle', 'deer', 'reindeer', 'giraffe', 'camel', 'elephant']
+
+rad = random.randint(0,9)
+hangman(letters[rad])
